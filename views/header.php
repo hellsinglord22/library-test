@@ -1,47 +1,23 @@
+
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
     <head>
-
-        <!-- http://getbootstrap.com/ -->
-        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
-
-        <link href="/css/styles.css" rel="stylesheet"/>
-
-        <?php if (isset($title)): ?>
-            <title>Misr Public Library: <?= htmlspecialchars($title) ?></title>
-        <?php else: ?>
-            <title>Misr Public Library</title>
-        <?php endif ?>
-
-        <!-- https://jquery.com/ -->
-        <script src="/js/jquery-1.11.3.min.js"></script>
-
-        <!-- http://getbootstrap.com/ -->
-        <script src="/js/bootstrap.min.js"></script>
-
-        <script src="/js/scripts.js"></script>
-
+        <meta charset="UTF-8" />
+        <!-- IE Compatibility Meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- First Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>الموديولات التعليمية لمهارات الفهرسة باستخدام قواعد وصف المصادر وإتاحتها (RDA) لدى أخصائي المكتبات والمعلومات بشبكة مكتبات مصر العامة</title>
+        <link rel='stylesheet' href='css/bootstrap.css' />
+        <link rel='stylesheet' href='css/style.css' />
+	<link rel='stylesheet' href='css/media.css' />
+        <link rel='stylesheet' href='css/hover.css' />
+        <link rel='stylesheet' href='css/animate.css' />
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
     </head>
-
     <body>
-
-        <div class="container">
-
-            <div id="top">
-                <div>
-                    <a href="/"><img alt="Misr public library" src=""/></a>
-                </div>
-                <?php if (!empty($_SESSION["id"])): ?>
-                    <ul class="nav nav-pills">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href="logout.php"><strong></strong></a></li>
-                    </ul>
-                <?php endif ?>
-            </div>
-
-            <div id="middle">
+        
+    
