@@ -1,3 +1,10 @@
+<style>
+    body
+    {
+        margin: 500px;
+        margin-top: 50px;    
+    }
+</style>
 <form action="register.php" method="post">
     <fieldset>
         <div class="form-group">

@@ -1,3 +1,11 @@
+<style>
+    body
+    {
+        margin: 500px;
+        margin-top: 50px;    
+    }
+</style>
+
 <form action="login.php" method="POST">
     <fieldset>
         <div class="form-group">
