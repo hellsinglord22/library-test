@@ -13,38 +13,47 @@
     // else if user reached page via POST (as by submitting a form via POST)
     else if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // validate submission
-        if (empty($_POST["username"]))
-        {
-            apologize("You must provide your username.");
+        // get username and password  
+        $username = $_POST["username"]; 
+        $password = $_POST["password"]; 
+        
+        
+        // make sure that username and password are not empty 
+        if (empty($username)){
+            apologize("Username can't be empty !"); 
+        } 
+        else if (empty($password)){
+            apologize("Password can't be empty !"); 
         }
-        else if (empty($_POST["password"]))
-        {
-            apologize("You must provide your password.");
-        }
-
-        // query database for user
-        $rows = CS50::query("SELECT * FROM users WHERE username = ?", $_POST["username"]);
-
-        // if we found user, check password
-        if (count($rows) == 1)
-        {
+        
+        
+        // find user by username 
+        $result = CS50::query("SELECT * FROM users WHERE username = ?", $username); 
+        
+        // make sure you found at least 1 
+        if (count($result) == 1){
+            
             // first (and only) row
-            $row = $rows[0];
+            $row = $result[0];
 
             // compare hash of user's input against hash that's in database
-            if (password_verify($_POST["password"], $row["hash"]))
+            if (password_verify($password, $row["password"]))
             {
                 // remember that user's now logged in by storing user's ID in session
                 $_SESSION["id"] = $row["id"];
 
+                
                 // redirect to portfolio
-                redirect("/");
+                redirect("index.php");
+            }
+            else {
+                apologize("Invalid username/password !!!");
             }
         }
-
-        // else apologize
-        apologize("Invalid username and/or password.");
+        else {
+            apologize("Invalid username/password !!!");
+        }
+        
     }
 
 ?>
