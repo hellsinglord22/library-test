@@ -16,7 +16,8 @@
  
 
       <ul class="nav navbar-nav navbar-right">
-	<li><a href="contactus.html">اتـصل بنـا </a></li>
+        <li><a href="logout.php">تسجيل الخروج </a></li>
+	      <li><a href="contactus.html">اتـصل بنـا </a></li>
         <li><a href="sites.html">مواقع هامة</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الموديولات التعليمية   <span class="caret"></span></a>
