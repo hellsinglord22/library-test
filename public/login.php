@@ -42,6 +42,11 @@
                 // remember that user's now logged in by storing user's ID in session
                 $_SESSION["id"] = $row["id"];
                 
+                // get the module value 
+                $_SESSION["module1"] = $row["module1"]; 
+                $_SESSION["module2"] = $row["module2"]; 
+                $_SESSION["module3"] = $row["module3"]; 
+                
                 // redirect to portfolio
                 redirect("index.php");
             }
