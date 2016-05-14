@@ -23,8 +23,22 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الموديولات التعليمية   <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="http://rdatrainingcourse.com/module1/story.html"target="_self" ">المـوديـول الأول</a></li>
-            <li><a href="">المـوديـول الثـاني </a></li>
-            <li><a href="">المـوديـول الثـالث</a></li>
+            <?php
+              if (isset($_SESSION['module1']))
+              {
+                  if ($_SESSION['module1'] >= 90){
+                    print('<li><a href="http://rdatrainingcourse.com/module2/story.html"target="_self" ">المـوديـول الثاني </a></li>');
+                  }
+              }
+              
+              if (isset($_SESSION['module2']))
+              {
+                  if ($_SESSION['module2'] >= 90){
+                    print('<li><a href="http://rdatrainingcourse.com/module3/story.html"target="_self" ">المـوديـول الثالث  </a></li>');
+                  }
+              }
+            
+            ?>
 
           </ul>
 	    <li class="active"><a href="index.html">الرئيسية</a></li>
@@ -182,8 +196,38 @@
 	
 	<div class=" blocks col-lg-4 col-sm-4 col-xs-12 text-center">
 	   
-	   <h2 class="m_title">الموديول الثاني</h2>
-	    <img class="img-responsive center-block "src="images/modules.png" width="80" height="80"/>
+	   <?php
+	    if (isset($_SESSION['module1'])){
+	      if ($_SESSION['module1'] >= 90){
+	        print('<a href="http://rdatrainingcourse.com/module2/story.html" target="_self" "="">
+	   <h2 class="m_title ">الموديول الثاني</h2>
+	<img class="img-responsive center-block " src="images/modules.png" width="80" height="80">
+	    </a>'); 
+	      }
+	      else {
+	        print('
+	   <h2 class="m_title ">الموديول الثاني</h2>
+	<img class="img-responsive center-block " src="images/modules.png" width="80" height="80">'); 
+	      }
+	    }
+	    
+	    if (isset($_SESSION['module2'])){
+	      if ($_SESSION['module2'] >= 90){
+	        print('<a href="http://rdatrainingcourse.com/module3/story.html" target="_self" "="">
+	   <h2 class="m_title ">الموديول الثالث </h2>
+	<img class="img-responsive center-block " src="images/modules.png" width="80" height="80">
+	    </a>'); 
+	      }
+	      else {
+	        print('
+	   <h2 class="m_title ">الموديول الثالث </h2>
+	<img class="img-responsive center-block " src="images/modules.png" width="80" height="80">'); 
+	      }
+	    }
+	   
+	   
+	   ?>
+
 
 	</div>
 	

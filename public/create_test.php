@@ -38,7 +38,7 @@
             if ($answer === "yes" || $answer === "no"){
                 $type = "RW"; 
                 $result = CS50::query("INSERT IGNORE INTO questions (question, type, right_answer, module_number) VALUES(?, ?, ?, ?)", $question, $type, $answer,$module_number);
-                render("test_form.php", ["title => create test"]); 
+                    render("test_form.php", ["title => create test"]); 
             }
             else 
             {
