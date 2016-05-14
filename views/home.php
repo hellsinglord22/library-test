@@ -211,7 +211,17 @@
 	      }
 	    }
 	    
-	    if (isset($_SESSION['module2'])){
+	   
+	   
+	   ?>
+
+
+	</div>
+	
+	<div class=" blocks col-lg-4 col-sm-4 col-xs-12 text-center">
+	   
+	   <?php
+	   	 if (isset($_SESSION['module2'])){
 	      if ($_SESSION['module2'] >= 90){
 	        print('<a href="http://rdatrainingcourse.com/module3/story.html" target="_self" "="">
 	   <h2 class="m_title ">الموديول الثالث </h2>
@@ -224,17 +234,7 @@
 	<img class="img-responsive center-block " src="images/modules.png" width="80" height="80">'); 
 	      }
 	    }
-	   
-	   
 	   ?>
-
-
-	</div>
-	
-	<div class=" blocks col-lg-4 col-sm-4 col-xs-12 text-center">
-	   
-	   <h2 class="m_title">الموديول الثالث</h2>
-	    <img class="img-responsive center-block "src="images/modules.png" width="80" height="80"/>
 
 	</div>
 	</div>

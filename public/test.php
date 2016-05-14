@@ -84,8 +84,9 @@
                 CS50::query("UPDATE users SET module1 = ? WHERE id = ?", $_SESSION['module3'], $_SESSION['id']); 
             }
             
-            render('test_result',
-                    ["title" => "result", "result" => $_SESSION["result"], "total" => $_SESSION["size"]]); 
+            render('test_result.php',
+                    ["title" => "result", "result" => $_SESSION["result"], "total" => $_SESSION["size"], 
+                            "degree" => $degree]); 
         }
         
     }
