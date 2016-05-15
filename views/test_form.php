@@ -30,12 +30,12 @@
                 <input autocomplete="off" autofocus class="form-control" name="option4" placeholder="option4" type="text" required/>
             </div>
             <select name="module">
-                <option value="6">Module 6</option>
                 <option value="1">Module 1</option>
                 <option value="2">Module 2</option>
                 <option value="3">Module 3</option>
                 <option value="4">Module 4</option>
                 <option value="5">Module 5</option>
+                <option value="6">Module 6</option>
             </select>
         </div>
         <div class="form-group" id="type">

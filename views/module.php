@@ -23,7 +23,7 @@
     <form action="test.php" method="post">
         
         <?php
-            print($_SESSION["result"]);
+
             // check the type of the question 
             $type = $data["type"]; 
             

@@ -84,6 +84,16 @@
                 CS50::query("UPDATE users SET module1 = ? WHERE id = ?", $_SESSION['module3'], $_SESSION['id']); 
             }
             
+            
+            
+            $queryResult = CS50::query('INSERT IGNORE INTO history (user_id, module, degree) VALUES(?, ?, ?)'
+                , $_SESSION['id'], $current_module, $degree); 
+                
+            if ($queryResult == 0){
+                apologize('something went wrong');
+            }    
+                
+            
             render('test_result.php',
                     ["title" => "result","degree" => $degree, "current_module" => $current_module]); 
         }
