@@ -20,10 +20,10 @@
         
         // make sure that username and password are not empty 
         if (empty($username)){
-            apologize("Username can't be empty !"); 
+            apologize("لا يمكن لكلمة المستخدم أن تكون فارغة "); 
         } 
         else if (empty($password)){
-            apologize("Password can't be empty !"); 
+            apologize("لا يمكن لكلمة السر أن تكون فارغة "); 
         }
         
         
@@ -51,11 +51,11 @@
                 redirect("index.php");
             }
             else {
-                apologize("Invalid username/password !!!");
+                apologize("كلمة سر/ مستخدم غير صحيحة ");
             }
         }
         else {
-            apologize("Invalid username/password !!!");
+            apologize("كلمة سر/ مستخدم غير صحيحة ");
         }
         
     }

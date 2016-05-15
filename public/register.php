@@ -18,15 +18,15 @@
         // 1. make sure that username is not empty
         if (empty($username))
         {
-          apologize("please, provide a username entry !!!"); 
+          apologize("نرجو أدخال كلمة مستخدم "); 
         }
         else if (empty($password))
         {
-           apologize("please, provide a password entry !!!"); 
+           apologize("نرجو أدخال كلمة مرور "); 
         }
         else if ($password !== $confirmPassword)
         {
-          apologize("password doens't match"); 
+          apologize("كلمة المرور لا تتطابق "); 
         }
          
         // 4. make sure that username and email address is not already used if its not there then
@@ -38,7 +38,7 @@
             redirect('login.php'); 
         }
         else {
-            apologize("Username is already in use"); 
+            apologize("لقد تم إستخدام كلمات المستخدم من قبل "); 
         }
  
     }
