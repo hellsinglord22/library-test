@@ -1,15 +1,42 @@
 <style>
+    @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
     #main
     {
-        margin-left: 200px;
-        margin-right: 300px;
         text-align: center;
+        margin-top: 10px;    
+        
     }
     
     body
     {
         direction: rtl;
+        font-family: 'Droid Arabic Naskh', serif;
+        background-image: url("../images/callout_bg.jpg");
     }
+    
+     h1
+    {
+        background:#222;
+        color:#f9f9f9;
+        padding:50px;
+        
+    }
+    
+    
+    
+    button
+    {
+        width: 25%;
+        padding: 5px;
+        margin-top: 40px;
+    }
+    
+    .message
+    {
+    }
+    
+    
 </style>
 
 
@@ -47,7 +74,7 @@
             $newline = "</br>"; 
             
             $successButton = '
-                <div>
+                <div class="message">
                     <button>
                         <a href="/">
                             التالي 
@@ -71,7 +98,7 @@
                     print($fail); 
                     print($newline); 
                     print('
-                        <div>
+                        <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/module1/story.html">
                                     التالي 
@@ -95,7 +122,7 @@
                     print($fail); 
                     print($newline); 
                     print('
-                        <div>
+                        <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/module2/story.html">
                                     التالي 
@@ -118,7 +145,7 @@
                     print($fail);
                     print($newline); 
                     print('
-                        <div>
+                        <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/module1/story.html">
                                     التالي 
