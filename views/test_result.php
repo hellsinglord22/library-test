@@ -32,10 +32,6 @@
         margin-top: 40px;
     }
     
-    .message
-    {
-    }
-    
     
 </style>
 
