@@ -85,8 +85,7 @@
             }
             
             render('test_result.php',
-                    ["title" => "result", "result" => $_SESSION["result"], "total" => $_SESSION["size"], 
-                            "degree" => $degree]); 
+                    ["title" => "result","degree" => $degree, "current_module" => $current_module]); 
         }
         
     }
