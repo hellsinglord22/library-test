@@ -31,5 +31,13 @@
             redirect("login.php");
         }
     }
+    
+    // admin have access to this only 
+    if (in_array($_SERVER['PHP_SELF'], ["/history.php"]))
+    {
+        if ($_SESSION['id'] != 5){
+            redirect('/');
+        }            
+    }
 
 ?>
