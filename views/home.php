@@ -17,6 +17,12 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="logout.php">تسجيل الخروج </a></li>
+        <?php
+        	if ($_SESSION['id'] == 5)
+        	{
+        		print('<li><a href="history.php"> السجل  </a><li>'); 
+        	}
+        ?>
 	      <li><a href="contactus.html">اتـصل بنـا </a></li>
         <li><a href="sites.html">مواقع هامة</a></li>
         <li class="dropdown">
