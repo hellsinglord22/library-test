@@ -69,14 +69,7 @@
             
             $newline = "</br>"; 
             
-            $successButton = '
-                <div class="message">
-                    <button>
-                        <a href="/">
-                            التالي 
-                        </a>
-                    </button>
-                </div>'; 
+            
             
             // end of Attributes // 
             
@@ -87,7 +80,14 @@
                 {
                  print($success);    
                  print($newline); 
-                 print($successButton); 
+                 print('
+                <div class="message">
+                    <button>
+                        <a href="http://rdatrainingcourse.com/module1/story.html">
+                            التالي 
+                        </a>
+                    </button>
+                </div>'); 
                 }
                 else 
                 {
@@ -96,7 +96,7 @@
                     print('
                         <div class="message">
                             <button>
-                                <a href="http://rdatrainingcourse.com/module1/story.html">
+                                <a href="http://rdatrainingcourse.com/contentm1/story.html">
                                     التالي 
                                 </a>
                             </button>
@@ -110,7 +110,14 @@
                 {
                     print($success);    
                     print($newline); 
-                    print($successButton); 
+                    print('
+                <div class="message">
+                    <button>
+                        <a href="http://rdatrainingcourse.com/module1/story.html">
+                            التالي 
+                        </a>
+                    </button>
+                </div>'); 
                     
                 }
                 else 
@@ -120,7 +127,7 @@
                     print('
                         <div class="message">
                             <button>
-                                <a href="http://rdatrainingcourse.com/module2/story.html">
+                                <a href="http://rdatrainingcourse.com/contentm2/story.html">
                                     التالي 
                                 </a>
                             </button>
@@ -131,9 +138,16 @@
             {
                 if ($_SESSION['module3'] >= 90)
                 {
-                    print($successButton); 
-                    print($newline); 
                     print($success);    
+                    print($newline); 
+                    print('
+                <div class="message">
+                    <button>
+                        <a href="http://rdatrainingcourse.com/module1/story.html">
+                            التالي 
+                        </a>
+                    </button>
+                </div>'); 
                     
                 }
                 else 
@@ -143,7 +157,7 @@
                     print('
                         <div class="message">
                             <button>
-                                <a href="http://rdatrainingcourse.com/module1/story.html">
+                                <a href="http://rdatrainingcourse.com/contentm3/story.html">
                                     التالي 
                                 </a>
                             </button>
