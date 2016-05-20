@@ -7,6 +7,12 @@
     
     if ($_SERVER["REQUEST_METHOD"] == "GET")
     {
+        // if its an admin redirect // 5 is admin id 
+        if ($_SESSION['id'] == 5){
+            apologize('لا يسطيع المشرف أخذ الاختبارات ') ;
+        }
+        
+        
         // get module number and type of test
         $module_number = (isset($_GET['module_number'])) ? $_GET["module_number"] : 1 ; 
         $_SESSION["current_module"] = $module_number; 
