@@ -42,29 +42,29 @@
     <h1>
         <?php
         
-            print('ﻝﻮﻳﺩﻮﻤﻟا ﺭﺎﺒﺘﺧﺇ ﺔﺠﻴﺘﻧ ');
+            print('ﻧﺘﻴﺠﺔ ﺇﺧﺘﺒﺎﺭ اﻟﻤﻮﺩﻳﻮﻝ ');
             if ($current_module == 1)
             {
-                print('ﻝﻭﻷا '); 
+                print('اﻷﻭﻝ '); 
             }
             else if ($current_module == 2)
             {
-                print('ﻲﻧﺎﺜﻟا '); 
+                print('اﻟﺜﺎﻧﻲ '); 
             }
             else if ($current_module == 3)
             {
-                print('ﺚﻟﺎﺜﻟا '); 
+                print('اﻟﺜﺎﻟﺚ '); 
             }
         ?>
     </h1>
     
-    
+        
     <div>
         <?php
         
             // Attributes // 
-            $fail = "ﻯﺮﺧﺃ ﺓﺮﻣ ﻞﻳﺩﻮﻤﻟا ﺔﺳاﺭﺪﻟ ﻲﻟﺎﺘﻟا ﻰﻠﻋ ﻂﻐﻀﻟﺎﺑ ﻢﻗ % 90 ﻦﻣ ﻞﻗﺃ ﺔﺟﺭﺩ ﻰﻠﻋ ﺖﻠﺼﺣ ﺪﻘﻟ ﻢﻠﻌﺘﻤﻟا ﻱﺰﻳﺰﻋ  "; 
-            $success = "ﺔﻴﺴﻴﺋﺮﻟا ﺔﺤﻔﺼﻠﻟ ﺏﺎﻫﺬﻠﻟ ﻲﻟﺎﺘﻟا ﻰﻠﻋ ﻂﻐﺿﺇ ٪ 90 ﻦﻣ ﻰﻠﻋﺃ ﺔﺟﺭﺩ ﻰﻠﻋ ﺖﻠﺼﺣ ﺪﻘﻟ ﻢﻠﻌﺘﻤﻟا ﻱﺰﻳﺰﻋ "; 
+            $fail = "ﻋﺰﻳﺰﻱ اﻟﻤﺘﻌﻠﻢ ﻟﻘﺪ ﺣﺼﻠﺖ ﻋﻠﻰ ﺩﺭﺟﺔ ﺃﻗﻞ ﻣﻦ 90 % ﻗﻢ ﺑﺎﻟﻀﻐﻂ ﻋﻠﻰ اﻟﺘﺎﻟﻲ ﻟﺪﺭاﺳﺔ اﻟﻤﻮﺩﻳﻞ ﻣﺮﺓ ﺃﺧﺮﻯ  "; 
+            $success = "ﻋﺰﻳﺰﻱ اﻟﻤﺘﻌﻠﻢ ﻟﻘﺪ ﺣﺼﻠﺖ ﻋﻠﻰ ﺩﺭﺟﺔ ﺃﻋﻠﻰ ﻣﻦ 90 ٪ ﺇﺿﻐﻂ ﻋﻠﻰ اﻟﺘﺎﻟﻲ ﻟﻠﺬﻫﺎﺏ ﻟﻠﺼﻔﺤﺔ اﻟﺮﺋﻴﺴﻴﺔ "; 
             
             
             $newline = "</br>"; 
@@ -84,7 +84,7 @@
                 <div class="message">
                     <a href="http://rdatrainingcourse.com/module1/story.html">
                         <button>
-                            ﻲﻟﺎﺘﻟا 
+                            اﻟﺘﺎﻟﻲ 
                         </button>
                     </a>        
                 </div>'); 
@@ -97,7 +97,7 @@
                         <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/contentm1/story.html">
-                                    ﻲﻟﺎﺘﻟا 
+                                    اﻟﺘﺎﻟﻲ 
                                 </a>
                             </button>
                         </div>'); 
@@ -114,7 +114,7 @@
                 <div class="message">
                     <button>
                         <a href="http://rdatrainingcourse.com/module1/story.html">
-                            ﻲﻟﺎﺘﻟا 
+                            اﻟﺘﺎﻟﻲ 
                         </a>
                     </button>
                 </div>'); 
@@ -128,7 +128,7 @@
                         <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/contentm2/story.html">
-                                    ﻲﻟﺎﺘﻟا 
+                                    اﻟﺘﺎﻟﻲ 
                                 </a>
                             </button>
                         </div>');
@@ -144,7 +144,7 @@
                 <div class="message">
                     <button>
                         <a href="http://rdatrainingcourse.com/module1/story.html">
-                            ﻲﻟﺎﺘﻟا 
+                            اﻟﺘﺎﻟﻲ 
                         </a>
                     </button>
                 </div>'); 
@@ -158,7 +158,7 @@
                         <div class="message">
                             <button>
                                 <a href="http://rdatrainingcourse.com/contentm3/story.html">
-                                    ﻲﻟﺎﺘﻟا 
+                                    اﻟﺘﺎﻟﻲ 
                                 </a>
                             </button>
                         </div>'); 
