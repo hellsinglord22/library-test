@@ -38,7 +38,7 @@
 
 
 <div id='main'>
-    
+
     <h1>
         <?php
         
@@ -65,6 +65,7 @@
             // Attributes // 
         $fail = "ﻋﺰﻳﺰﻱ اﻟﻤﺘﻌﻠﻢ ﻟﻘﺪ ﺣﺼﻠﺖ ﻋﻠﻰ ﺩﺭﺟﺔ ﺃﻗﻞ ﻣﻦ 90 % ﻗﻢ ﺑﺎﻟﻀﻐﻂ ﻋﻠﻰ اﻟﺘﺎﻟﻲ ﻟﺪﺭاﺳﺔ اﻟﻤﻮﺩﻳﻞ ﻣﺮﺓ ﺃﺧﺮﻯ  "; 
         $success = "ﻋﺰﻳﺰﻱ اﻟﻤﺘﻌﻠﻢ ﻟﻘﺪ ﺣﺼﻠﺖ ﻋﻠﻰ ﺩﺭﺟﺔ ﺃﻋﻠﻰ ﻣﻦ 90 ٪ ﺇﺿﻐﻂ ﻋﻠﻰ اﻟﺘﺎﻟﻲ ﻟﻠﺬﻫﺎﺏ ﻟﻠﺼﻔﺤﺔ اﻟﺮﺋﻴﺴﻴﺔ "; 
+        $degree = $_SESSION['result']." / ".$_SESSION['size'];
         
         
         $newline = "</br>"; 
@@ -78,7 +79,9 @@
         {
             if ($_SESSION['module1'] >= 90)
             {
-               print($success);    
+               print($success);  
+               print($newline); 
+               print($degree);   
                print($newline); 
                print('
                 <div class="message">
@@ -92,6 +95,8 @@
            else 
            {
             print($fail); 
+            print($newline); 
+            print($degree);   
             print($newline); 
             print('
                 <div class="message">
@@ -108,7 +113,9 @@
     {
         if ($_SESSION['module2'] >= 90)
         {
-            print($success);    
+            print($success);  
+            print($newline); 
+            print($degree);     
             print($newline); 
             print('
                 <div class="message">
@@ -124,6 +131,8 @@
         {
             print($fail); 
             print($newline); 
+            print($degree);   
+            print($newline); 
             print('
                 <div class="message">
                     <a href="http://rdatrainingcourse.com/contentm2/story.html">
@@ -138,7 +147,9 @@
     {
         if ($_SESSION['module3'] >= 90)
         {
-            print($success);    
+            print($success);  
+            print($newline); 
+            print($degree);     
             print($newline); 
             print('
                 <div class="message">
@@ -153,6 +164,8 @@
         else 
         {
             print($fail);
+            print($newline); 
+            print($degree);   
             print($newline); 
             print('
                 <div class="message">
