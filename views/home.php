@@ -25,6 +25,8 @@
 					?>
 					<li><a href="contactus.html">اتـصل بنـا </a></li>
 					<li><a href="sites.html">مواقع هامة</a></li>
+
+					<?php if($_SESSION['id'] != 5):?>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الموديولات التعليمية   <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -48,20 +50,31 @@
 
 						</ul>
 					</li>
+					<?php endif;?>
 
 
 					<?php if ($_SESSION['id'] == 5):?>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">عرض الإختبارات <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href='show.php?module_number=1'>إختبار أول قبلي </a></li>
-							<li><a href='show.php?module_number=4'>إختبار أول بعدي </a></li>
-							<li><a href='show.php?module_number=2'>إختبار ثاني قبلي </a></li>
-							<li><a href='show.php?module_number=5'>إختبار ثاني بعدي </a></li>
-							<li><a href='show.php?module_number=3'>إختبار ثالث قبلي </a></li>
-							<li><a href='show.php?module_number=6'>إختبار ثالث بعدي </a></li>
-						</ul>
-					</li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">الموديولات التعليمية <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href='http://rdatrainingcourse.com/contentm1/story.html'>المـوديـول الأول </a></li>
+								<li><a href='http://rdatrainingcourse.com/contentm2/story.html'>المـوديـول الثاني </a></li>
+								<li><a href='http://rdatrainingcourse.com/contentm3/story.html'>المـوديـول الثالث </a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">عرض الإختبارات <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href='show.php?module_number=1'>إختبار أول قبلي </a></li>
+								<li><a href='show.php?module_number=4'>إختبار أول بعدي </a></li>
+								<li><a href='show.php?module_number=2'>إختبار ثاني قبلي </a></li>
+								<li><a href='show.php?module_number=5'>إختبار ثاني بعدي </a></li>
+								<li><a href='show.php?module_number=3'>إختبار ثالث قبلي </a></li>
+								<li><a href='show.php?module_number=6'>إختبار ثالث بعدي </a></li>
+							</ul>
+						</li>
 
 					<?php endif; ?>
 					<li class="active"><a href="index.php">الرئيسية</a></li>
