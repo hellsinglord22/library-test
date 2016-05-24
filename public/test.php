@@ -64,6 +64,11 @@
         {
             
             $module_number = $_SESSION["current_module"]; 
+
+            // get module type // 
+            $realModuleNumber = $module_number; 
+
+
             // todo display the result and send it to the database
             // check the result 
             $current_module = $module_number - 1; 
@@ -93,7 +98,7 @@
             
             
             $queryResult = CS50::query('INSERT IGNORE INTO history (user_id, module, degree) VALUES(?, ?, ?)'
-                , $_SESSION['id'], $current_module, $degree); 
+                , $_SESSION['id'], $realModuleNumber, $degree); 
                 
             if ($queryResult == 0){
                 apologize('something went wrong');
