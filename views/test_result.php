@@ -85,7 +85,7 @@
                print($newline); 
                print('
                 <div class="message">
-                    <a href="http://rdatrainingcourse.com/module1/story.html">
+                    <a href="http://rdatrainingcourse.com/module2/story.html">
                         <button>
                             اﻟﺘﺎﻟﻲ 
                         </button>
@@ -119,7 +119,7 @@
             print($newline); 
             print('
                 <div class="message">
-                    <a href="http://rdatrainingcourse.com/module1/story.html">
+                    <a href="http://rdatrainingcourse.com/module3/story.html">
                         <button>
                             اﻟﺘﺎﻟﻲ 
                         </button>
@@ -153,7 +153,7 @@
             print($newline); 
             print('
                 <div class="message">
-                    <a href="http://rdatrainingcourse.com/module1/story.html">
+                    <a href="http://rdatrainingcourse.com/congratulation.html">
                         <button>
                             اﻟﺘﺎﻟﻲ 
                         </button>
