@@ -14,7 +14,7 @@
         background-image: url("../images/test.jpg");
     }
         
-        
+
     body{
         direction: rtl;
         font-family: 'Droid Arabic Naskh', serif;
@@ -29,9 +29,15 @@
         
     }
     
+    input{
+        font-size: large;     
+    }
+
     #question
     {
         text-align: center;
+        font-size: x-large;
+        font-weight: bold; 
     }
     
     #main-body
@@ -57,6 +63,8 @@
     
     #submit
     {
+        font-size: medium;
+        font-weight: bold;
         margin-bottom: 15px;   
         padding: 15px;
     }
